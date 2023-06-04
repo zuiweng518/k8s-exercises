@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: main
+spec:
+  replicas: 1
+  selector:
+    matchLables:
+      app: main
+  templates:
+    metadata:
+      labels:
+        app: main
+    spec:
+      container:
+      - name: main
+        image: zuiweng518/main:v1.0
+
+
