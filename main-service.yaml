@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: index-service
+spec:
+  type: NodePort
+  ports:
+  - port: 18080
+    targetPort: 18080
+    protocol: TCP
+    name:  index-service
+  selector:
+    app: index
