@@ -5,8 +5,8 @@ metadata:
 data: 
   config.yaml: |
     db:
-        host: 192.168.134.100
-        port: 32090
+        host: 172.16.172.120
+        port: 32526
         username:  root
         password: 123456
         dbname: demo
