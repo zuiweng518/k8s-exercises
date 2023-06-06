@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: index-service
 spec:
-  type: NodePort
+  type: ClusterIP 
   ports:
   - port: 18080
-    targetPort: 18080
     protocol: TCP
     name:  index-service
   selector:
