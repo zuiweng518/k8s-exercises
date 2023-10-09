@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: shop-service
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 10000
     protocol: TCP
