@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: order-service
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 9090
     targetPort: 19090
